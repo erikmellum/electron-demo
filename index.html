@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./bower_components/foundation-sites/dist/foundation.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="my-header">
+      <div class="home header-item">Home</div>
+      <div class="about header-item">About</div>
+      <div class="contact header-item">Contact</div>
+    </div>
+    <div class="container">
+    </div>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+    <button class="first-button button success">Toast</button>
+
+  </body>
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+
+  </script>
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/underscore/underscore-min.js"></script>
+  <script src="./bower_components/backbone/backbone-min.js"></script>
+  <script src="./bower_components/handlebars/handlebars.min.js"></script>
+  <script src="./bower_components/what-input/what-input.min.js"></script>
+  <script src="./bower_components/foundation-sites/dist/foundation.min.js"></script>
+
+  <script>
+      $(document).foundation();
+  </script>
+  <script src="./js/app.js"></script>
+  <script>if (window.module) module = window.module;</script>
+  <script src="http://localhost:35729/livereload.js"></script>
+
+</html>

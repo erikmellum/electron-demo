@@ -1,0 +1,38 @@
+$primary-color: red;
+
+body {
+  background: #EFEFEF;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.my-header {
+  background: #555;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-item {
+  background: $primary-color;
+  padding: 10px 20px;
+  color: #DDD;
+  cursor: pointer;
+  margin: 0px 5px;
+  transition: .3s background;
+}
+
+.header-item:hover {
+  background: #222;
+}
+
+.header-item:last-child {
+  margin-right: 0px;
+}
+
+.toast {
+  background: $primary-color;
+  width: 200px;
+  height: 100px;
+}
